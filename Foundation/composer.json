@@ -1,0 +1,26 @@
+{
+    "name": "webmasters/doctrine-skeleton",
+    "description": "A sample application skeleton using Doctrine 2",
+    "license": "MIT",
+    "type": "project",
+    "autoload": {
+        "psr-0": {
+            "Controllers": "./src/",
+            "Entities": "./src/",
+            "Repositories": "./src/",
+			"Validators": "./src/"
+        },
+        "psr-4": {
+            "Installers\\": "./src/Installers/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "doctrine/orm": "2.5.5"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "Installers\\ProjectInstaller::postCreate"
+        ]
+    }
+}
