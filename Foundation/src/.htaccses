@@ -1,0 +1,3 @@
+# PHP able to run in .html
+Action application/x-httpd-php5 /cgi-sys/php5-fcgi-starter.fcgi
+AddType application/x-httpd-php5 .php .php52 .htm .html
