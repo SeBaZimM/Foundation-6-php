@@ -123,6 +123,6 @@ abstract class AbstractBase
         $message = $this->getMessage(); // Get flash message
         $template = $this->getTemplate();
 
-        require_once 'C:\xampp\htdocs\Foundation-6-php\Foundation\src\partials\layout.tpl.php';
+        require_once 'C:\xampp\htdocs\Foundation-6-php\Foundation\src\layouts\layout.tpl.php';
     }
 }

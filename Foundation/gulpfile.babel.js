@@ -52,7 +52,7 @@ function copy() {
 
 // Copy page templates into finished HTML files
 function pages() {
-  return gulp.src('src/pages/**/*.{html,hbs,handlebars}')
+  return gulp.src('src/pages/**/*.{html,php,hbs,handlebars}')
     .pipe(panini({
       root: 'src/pages/',
       layouts: 'src/layouts/',
@@ -152,7 +152,7 @@ function images() {
 function server(done) {
   browser.init({
     //server: PATHS.dist, port: PORT
-    proxy: "http://localhost/Foundation"
+    proxy: "http://localhost/Foundation-6-php/Foundtaion/src/pages/"
   });
   done();
 }
